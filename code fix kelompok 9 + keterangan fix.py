@@ -57,7 +57,7 @@ node_alkohol_kanan = Node(pertanyaan="Konsumsi alkohol (jarang/sering)?")
 node_alkohol_kanan.tambah_cabang("jarang", tidak2)
 node_alkohol_kanan.tambah_cabang("sering", ya2)
 
-node_usia = Node(pertanyaan="Usia (muda/tua)?")
+node_usia = Node(pertanyaan="Usia (muda (=< 45) / tua (>45) )?")
 node_usia.tambah_cabang("tua", ya)
 node_usia.tambah_cabang("muda", node_alkohol_kanan) # Menyambung ke pertanyaan alkohol
 
